@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medical Portfolio - [M.Divya dharshini ]</title>
+  <style>
+    :root{
+      --bg:#f6f8fb; --card:#ffffff; --muted:#6b7280; --accent:#0077b6; --glass: rgba(255,255,255,0.6);
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;background:var(--bg);color:#0f172a;line-height:1.4}
+    .container{max-width:980px;margin:28px auto;padding:0 18px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:60px;height:60px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#00b4d8);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav{display:flex;gap:12px}
+    nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:8px}
+    nav a:hover{background:var(--glass)}
+    .hero{display:flex;gap:24px;align-items:center;padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .hero-left{flex:1}
+    .hero h1{margin:0 0 8px;font-size:22px}
+    .sub{color:var(--muted);margin:0 0 14px}
+    .cta{display:inline-block;padding:8px 12px;background:var(--accent);color:white;border-radius:8px;text-decoration:none}.grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+.card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+.section-title{font-weight:600;margin-bottom:10px}
+
+ul.timeline{list-style:none;padding:0;margin:0}
+ul.timeline li{padding:10px 0;border-left:2px solid #e6eef6;margin-left:8px;padding-left:14px}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skill{padding:6px 10px;border-radius:999px;background:#eef6fb;color:#003049;font-weight:600;font-size:13px}
+.project{border-radius:8px;padding:10px;background:#fbfdff;border:1px solid #e9f4ff}
+
+form{display:flex;flex-direction:column;gap:8px}
+input,textarea{padding:8px;border:1px solid #e5e7eb;border-radius:8px}
+button{padding:10px;border-radius:8px;border:0;background:var(--accent);color:white;font-weight:600}
+
+footer{margin-top:18px;text-align:center;color:var(--muted);font-size:14px}
+
+/* responsive */
+@media (max-width:880px){
+  .grid{grid-template-columns:1fr;}
+  .avatar{width:48px;height:48px}
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">YA</div>
+        <div>
+          <div style="font-weight:700">[M.Divya dharshini ]</div>
+          <div style="font-size:13px;color:var(--muted)">Medical Student | Future Clinician</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header><section class="hero card">
+  <div class="hero-left">
+    <h1>Hi — I'm [M.Divya dharshini ].</h1>
+    <p class="sub">A passionate medical student interested in clinical research, community health and medical education. This portfolio highlights my education, clinical experience, projects and skills.</p>
+    <a class="cta" href="#contact">Get in touch</a>
+  </div>
+  <div style="width:180px;text-align:center">
+    <img src="https://via.placeholder.com/150x150.png?text=Photo" alt="photo" style="width:140px;border-radius:12px;display:block;margin:0 auto 8px"/>
+    <div style="font-size:13px;color:var(--muted)">MBBS candidate • Class of [Year]</div>
+  </div>
+</section>
+
+<div class="grid">
+  <main>
+    <section id="about" class="card" style="margin-bottom:12px">
+      <div class="section-title">About me</div>
+      <p>I am a medical student with experience in clinical rotations, basic research and health education. I enjoy translating evidence into patient-friendly material and volunteering in community screening camps.</p>
+    </section>
+
+    <section id="education" class="card" style="margin-bottom:12px">
+      <div class="section-title">Education</div>
+      <ul class="timeline">
+        <li>
+          <strong>MBBS — [ABC Medical college ]</strong>
+          <div style="color:var(--muted);font-size:13px">2019 — Present</div>
+          <div style="margin-top:6px">Relevant coursework: Anatomy, Physiology, Pathology, Pharmacology. Active member of the clinical skills club.</div>
+        </li>
+        <li>
+          <strong>Higher Secondary — [EFG Higher secondary school ]</strong>
+          <div style="color:var(--muted);font-size:13px">2016 — 2018</div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="experience" class="card" style="margin-bottom:12px">
+      <div class="section-title">Clinical & research experience</div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div>
+          <strong>Clinical rotation — General Medicine</strong>
+          <div style="color:var(--muted);font-size:13px">Jun 2023 — Aug 2023</div>
+          <div>Shadowed clinicians, performed history taking and basic examinations under supervision.</div>
+        </div>
+        <div>
+          <strong>Research assistant — Dept. of Community Medicine</strong>
+          <div style="color:var(--muted);font-size:13px">Jan 2024 — Apr 2024</div>
+          <div>Assisted with data collection and literature review for a cross-sectional study on hypertension awareness.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card" style="margin-bottom:12px">
+      <div class="section-title">Selected projects</div>
+      <div class="project" style="margin-bottom:8px">
+        <strong>Patient information leaflets — Diabetes</strong>
+        <div style="color:var(--muted);font-size:13px">2024</div>
+        <div>Created easy-to-read leaflets in English and Tamil to help patients manage type 2 diabetes.</div>
+      </div>
+      <div class="project">
+        <strong>Community screening camp — Rural outreach</strong>
+        <div style="color:var(--muted);font-size:13px">2023</div>
+        <div>Organized BP and glucose screening for 200+ participants; provided counseling and referrals.</div>
+      </div>
+    </section>
+
+  </main>
+
+  <aside>
+    <section class="card" style="margin-bottom:12px">
+      <div class="section-title">Quick facts</div>
+      <p style="margin:6px 0"><strong>Location:</strong> [City, Country]</p>
+      <p style="margin:6px 0"><strong>Languages:</strong> English, Tamil, [other]</p>
+    </section>
+
+    <section class="card" style="margin-bottom:12px">
+      <div class="section-title">Skills</div>
+      <div class="skills">
+        <span class="skill">History taking</span>
+        <span class="skill">Clinical exams</span>
+        <span class="skill">Research</span>
+        <span class="skill">Patient education</span>
+        <span class="skill">Basic life support</span>
+      </div>
+    </section>
+
+    <section class="card" style="margin-bottom:12px">
+      <div class="section-title">Certificates</div>
+      <ul style="padding-left:18px;margin:8px 0;color:var(--muted)">
+        <li>Basic Life Support (BLS) — 2023</li>
+        <li>GCP Basics — 2024</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <div class="section-title">Contact</div>
+      <form onsubmit="event.preventDefault();alert('This is a demo form — replace with your email handler.')">
+        <input type="text" placeholder="M.Divya dharshini " required />
+        <input type="email" placeholder="divya@gmail.com" required />
+        <textarea rows="3" placeholder="Message"></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </aside>
+</div>
+
+<footer>
+  <div>Made with care • [M.Divya dharshini ] • Last updated: Aug 31, 2025</div>
+</footer>
+
+  </div>  <script>
+    // Simple small script to show how to customize quickly
+    // Replace initials in avatar if you put your name in the <title> or in the avatar area
+    (function(){
+      // set initials from title
+      try{
+        const title = document.title.split('-')[1] || document.title
+        const initials = (title.match(/\b\w/g) || []).slice(0,2).join('').trim().toUpperCase()
+        if(initials) document.querySelector('.avatar').textContent = initials
+      }catch(e){/*ignore*/}
+    })();
+  </script></body>
+</html>
